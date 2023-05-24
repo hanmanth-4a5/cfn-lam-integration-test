@@ -14,7 +14,7 @@ Resources:
   Lambda:
     Type: AWS::Lambda::Function
     Properties:
-      FunctionName: !Ref "LambdaName"
+      FunctionName: !Ref LambdaName
       Code: ./
       Handler: lambda.handler
       Runtime: python3.9
