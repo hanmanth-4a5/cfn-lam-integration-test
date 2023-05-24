@@ -1,5 +1,6 @@
 {
  "Parameters": {
-  "S3ArtifactStore": "abhinandan-ci-lambda-001"
+  "LambdaName": "lam-integration-test",
+  "S3ArtifactStore": "sanjaytests3"
  }
-}  
+}
