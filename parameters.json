@@ -13,7 +13,7 @@
   },
   {
     "ParameterKey": "S3ArtifactStore",
-    "ParameterValue": "abhinandan-ci-lambda-001"
+    "ParameterValue": "sanjaytests3"
   },
   {
     "ParameterKey": "GithubConnectionArn",
@@ -21,6 +21,6 @@
   },
   {
     "ParameterKey": "GithubRepositoryName",
-    "ParameterValue": "hanmanth-4a5/cfn-ci-to-lambda"
+    "ParameterValue": "hanmanth-4a5/cfn-lam-integration-test"
   }
 ]
