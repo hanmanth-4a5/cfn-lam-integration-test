@@ -17,7 +17,7 @@
   },
   {
     "ParameterKey": "GithubConnectionArn",
-    "ParameterValue": "arn:aws:codestar-connections:ap-south-1:179750807597:connection/9b071c03-1751-4ff5-9c06-c35a0e1d48c4"
+    "ParameterValue": "arn:aws:codestar-connections:ap-south-1:179750807597:connection/bf6bc463-3f2d-4a48-96a5-274fdcd0cd91"
   },
   {
     "ParameterKey": "GithubRepositoryName",
