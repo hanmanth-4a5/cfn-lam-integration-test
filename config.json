@@ -1,6 +1,6 @@
 {
  "Parameters": {
   "LambdaName": "lam-integration-test",
-  "S3ArtifactStore": "sanjaytests3"
+  "S3ArtifactStore": "fxtpextlb"
  }
 }
