@@ -13,7 +13,7 @@
   },
   {
     "ParameterKey": "S3ArtifactStore",
-    "ParameterValue": "sanjaytests3"
+    "ParameterValue": "fxtpextlb"
   },
   {
     "ParameterKey": "GithubConnectionArn",
