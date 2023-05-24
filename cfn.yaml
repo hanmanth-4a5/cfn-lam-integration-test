@@ -1,47 +1,22 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Description: 'This template deploys a basic stuff to get the aws account set up'
 Parameters:
+  LambdaName:
+    Type: String
+    Description: Name of Lambda Function
   S3ArtifactStore:
     Type: String
     Description: Name of S3 bucket
 
 Resources:
-
-  # Common Lambda Role
-  LambdaRole:
-    Type: AWS::IAM::Role
-    Properties:
-      RoleName: "cfn-to-ci-lambda-role"
-      Description: "Role assigned to lambdas"
-      AssumeRolePolicyDocument:
-        Version: "2012-10-17"
-        Statement:
-          - Effect: Allow
-            Principal:
-              Service:
-                - lambda.amazonaws.com
-            Action:
-              - 'sts:AssumeRole'
-      Policies:
-        - PolicyName: root
-          PolicyDocument:
-            Version: "2012-10-17"
-            Statement:
-              - Effect: Allow
-                Action:
-                  - s3:*
-                Resource: '*'
-
+  
   # Lambda
-  Lambda:
+  LambdaFunction:
     Type: AWS::Lambda::Function
     Properties:
-      FunctionName: "cfn-to-ci-lambda"
-      Description: "Lambda example"
+      FunctionName: !Ref "LambdaName"
       Code: ./
       Handler: lambda.handler
       Runtime: python3.9
-      Timeout: 900
-      Role: !GetAtt LambdaRole.Arn
+      Role: "arn:aws:lambda:ap-south-1:179750807597:function:lam-integration-test"
       PackageType: Zip
-      MemorySize: 128
