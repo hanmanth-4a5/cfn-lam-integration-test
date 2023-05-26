@@ -1,6 +1,7 @@
 {
  "Parameters": {
   "LambdaName": "lam-integration-test",
+  "LambdaRoleArn":"arn:aws:lambda:ap-south-1:179750807597:function:lam-integration-test",
   "S3ArtifactStore": "fxtpextlb"
  }
 }
