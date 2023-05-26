@@ -4,9 +4,6 @@ Parameters:
   LambdaName:
     Type: String
     Description: Name of Lambda Function
-   LambdaRoleArn:
-    Type: String
-    Description: Arn for Lambda role
   S3ArtifactStore:
     Type: String
     Description: Name of S3 bucket
@@ -21,5 +18,5 @@ Resources:
       Code: ./
       Handler: lambda.handler
       Runtime: python3.9
-      Role: !Ref LambdaRoleArn
+      Role: "arn:aws:lambda:ap-south-1:179750807597:function:lam-integration-test"
       PackageType: Zip
