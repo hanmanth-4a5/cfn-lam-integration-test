@@ -18,6 +18,5 @@ Resources:
       Code: ./
       Handler: lambda.handler
       Runtime: python3.9
-      Role: 
-        - "arn:aws:lambda:ap-south-1:179750807597:function:lam-integration-test"
+      Role: arn:aws:lambda:ap-south-1:179750807597:function:lam-integration-test
       PackageType: Zip
